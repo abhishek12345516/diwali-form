@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/diwali-form/static/css/main.3b71cc2a.css",
-    "main.js": "/diwali-form/static/js/main.fe240114.js",
+    "main.js": "/diwali-form/static/js/main.d22c452a.js",
     "static/js/453.ff4776bc.chunk.js": "/diwali-form/static/js/453.ff4776bc.chunk.js",
     "index.html": "/diwali-form/index.html",
     "main.3b71cc2a.css.map": "/diwali-form/static/css/main.3b71cc2a.css.map",
-    "main.fe240114.js.map": "/diwali-form/static/js/main.fe240114.js.map",
+    "main.d22c452a.js.map": "/diwali-form/static/js/main.d22c452a.js.map",
     "453.ff4776bc.chunk.js.map": "/diwali-form/static/js/453.ff4776bc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3b71cc2a.css",
-    "static/js/main.fe240114.js"
+    "static/js/main.d22c452a.js"
   ]
 }
