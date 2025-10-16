@@ -18,7 +18,10 @@ const FormPage = ({ onGenerate }) => {
     e.preventDefault();
     const data = { from: fromName, to: toName, msg: message };
     const encoded = encodeURIComponent(JSON.stringify(data));
-    const generatedLink = `${window.location.origin}?data=${encoded}`;
+
+    // ✅ Yeh line change ki gayi hai (important for GitHub Pages)
+    const generatedLink = `${window.location.origin}/diwali-form/?data=${encoded}`;
+
     setLink(generatedLink);
     onGenerate(data);
 
@@ -37,8 +40,7 @@ const FormPage = ({ onGenerate }) => {
     <div
       className="d-flex justify-content-center align-items-center vh-100 position-relative"
       style={{
-        background:
-          "radial-gradient(circle at center, #1b2735, #090a0f 80%)",
+        background: "radial-gradient(circle at center, #1b2735, #090a0f 80%)",
         overflow: "hidden",
       }}
     >
@@ -170,7 +172,6 @@ const FormPage = ({ onGenerate }) => {
 
       {/* CSS Animation */}
       <style>{`
-        /* Floating Diyas */
         .floating-diya {
           position: absolute;
           bottom: -50px;
@@ -188,7 +189,6 @@ const FormPage = ({ onGenerate }) => {
           100% { transform: translateY(-120vh); opacity: 0; }
         }
 
-        /* Glow orbs */
         .glow-light {
           position: absolute;
           width: 100px;
@@ -203,7 +203,6 @@ const FormPage = ({ onGenerate }) => {
           50% { transform: scale(1.3); opacity: 0.9; }
         }
 
-        /* Fireworks */
         .firework {
           position: absolute;
           width: 6px;
